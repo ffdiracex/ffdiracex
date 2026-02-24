@@ -23,7 +23,7 @@
     │  │  $ whoami                                       │ │
     │  │  > Linux systems programmer  (Larp)             │ │
     │  │  $ pwd                                          │ │
-    │  │  > /home/archbtw                                 │ │
+    │  │  > /home/archbtw                                │ │
     │  │  $ cat .focus                                   │ │
     │  │  > unistd.h                                     │ │
     │  │  > C++/Python/Rust                              │ │
@@ -33,7 +33,7 @@
     │  └────────────────────────────────────────────────┘ │
     │                                                      │
     ╰──────────────────────────────────────────────────────╯
-
+      (In case you didn't notice, I use Arch Btw (no bitches))
 
 </div>
 
