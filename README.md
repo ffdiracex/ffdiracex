@@ -3,11 +3,8 @@
 
 
 <div align="center">
-  <picture>
-    <source  media="" srcset="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3a28wamUxYmw5Y3hjb3RtaDQxcWNyMTUwcmZyeG1hZmZtZjNuc2JsOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ZwxpIHk5LutMc/giphy.gif" />
-  </picture>
+  <img src="https://media.giphy.com/media/ZwxpIHk5LutMc/giphy.gif" width="400" alt="Arch Linux terminal animation">
 </div>
-
 
 
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
