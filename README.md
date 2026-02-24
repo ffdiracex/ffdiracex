@@ -1,4 +1,6 @@
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Great+Vibes&pause=1000&color=8F33DF&center=true&vCenter=true&width=435&lines=Welcome+to+my+profile...;Nice+to+meet+you!;I+use+Arch+btw+%F0%9F%90%A7)](https://git.io/typing-svg)
+  <div style="font-family: 'Great Vibes', 'Pacifico', cursive; font-size: 3em; color: #8F33DF; margin: 20px 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
+    Welcome to my profile
+  </div>
 
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=8F33DF&center=true&vCenter=true&width=500&lines=echo+%22I+use+Arch+btw%22;printf(%22I+use+Arch+btw%5Cn%22);cout+%3C%3C+%22I+use+Arch+btw%22+%3C%3C+endl;print(%22I+use+Arch+btw%22);println!(%22I+use+Arch+btw%22);System.out.println(%22I+use+Arch+btw%22);console.log(%22I+use+Arch+btw%22);MsgBox+%22I+use+Arch+btw%22;echo+%22I+use+Arch+btw+(I+get+no+bitches)%22;printf(%22I+use+Arch+btw+(I+get+no+bitches)%5Cn%22);cout+%3C%3C+%22I+use+Arch+btw+(I+get+no+bitches)%22+%3C%3C+endl;print(%22I+use+Arch+btw+(I+get+no+bitches)%22);println!(%22I+use+Arch+btw+(I+get+no+bitches)%22);System.out.println(%22I+use+Arch+btw+(I+get+no+bitches)%22);console.log(%22I+use+Arch+btw+(I+get+no+bitches)%22);MsgBox+%22I+use+Arch+btw+(I+get+no+bitches)%22)](https://git.io/typing-svg)
