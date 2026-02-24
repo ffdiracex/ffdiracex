@@ -21,13 +21,13 @@
     │                                                      │
     │  ┌────────────────────────────────────────────────┐ │
     │  │  $ whoami                                       │ │
-    │  │  > Linux systems programmer                     │ │
+    │  │  > Linux systems programmer  (Larp)             │ │
     │  │  $ pwd                                          │ │
     │  │  > /home/archbtw                                 │ │
     │  │  $ cat .focus                                   │ │
     │  │  > unistd.h                                     │ │
     │  │  > C++/Python/Rust                              │ │
-    │  │  > X11 > Wayland                                 │ │
+    │  │  > X11 is better than Wayland                   │ │
     │  │  $ uptime                                       │ │
     │  │  > 18:23:14 up 2 weeks,  I don't reboot         │ │
     │  └────────────────────────────────────────────────┘ │
@@ -36,3 +36,6 @@
 
 ===============================================================================
 </div>
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
