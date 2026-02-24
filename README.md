@@ -1,7 +1,4 @@
-<div align="center">
-  <img src="https://media.giphy.com/media/ZwxpIHk5LutMc/giphy.gif" width="400" alt="Arch Linux terminal animation">
-</div>
-
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Great+Vibes&pause=1000&color=8F33DF&center=true&vCenter=true&width=435&lines=Welcome+to+my+profile...;Nice+to+meet+you!;I+use+Arch+btw+%F0%9F%90%A7)](https://git.io/typing-svg)
 
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=8F33DF&center=true&vCenter=true&width=500&lines=echo+%22I+use+Arch+btw%22;printf(%22I+use+Arch+btw%5Cn%22);cout+%3C%3C+%22I+use+Arch+btw%22+%3C%3C+endl;print(%22I+use+Arch+btw%22);println!(%22I+use+Arch+btw%22);System.out.println(%22I+use+Arch+btw%22);console.log(%22I+use+Arch+btw%22);MsgBox+%22I+use+Arch+btw%22;echo+%22I+use+Arch+btw+(I+get+no+bitches)%22;printf(%22I+use+Arch+btw+(I+get+no+bitches)%5Cn%22);cout+%3C%3C+%22I+use+Arch+btw+(I+get+no+bitches)%22+%3C%3C+endl;print(%22I+use+Arch+btw+(I+get+no+bitches)%22);println!(%22I+use+Arch+btw+(I+get+no+bitches)%22);System.out.println(%22I+use+Arch+btw+(I+get+no+bitches)%22);console.log(%22I+use+Arch+btw+(I+get+no+bitches)%22);MsgBox+%22I+use+Arch+btw+(I+get+no+bitches)%22)](https://git.io/typing-svg)
