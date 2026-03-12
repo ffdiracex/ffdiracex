@@ -27,7 +27,7 @@
     │  │  $ cat .focus                                   │ │
     │  │  > unistd.h                                     │ │
     │  │  > C++/Python/Rust                              │ │
-    │  │  > X11 is better than Wayland                   │ │
+    │  │                                                 │ │
     │  │  $ uptime                                       │ │
     │  │  > 18:23:14 up 2 weeks,  I don't reboot         │ │
     │  └────────────────────────────────────────────────┘ │
