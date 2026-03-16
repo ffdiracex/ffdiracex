@@ -1,129 +1,144 @@
 <div align="center">
   
-  <!-- Animated gradient header -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=8F33DF&center=true&vCenter=true&width=435&lines=echo+%22Hello%2C+World!%22;printf(%22I+use+Arch+btw%22);System.out.println(%22Welcome!%22)" alt="Typing SVG" />
-  
-  <!-- Nietzsche-inspired ASCII art header -->
-  <pre style="background: linear-gradient(90deg, #8F33DF, #00ff88, #ff6b6b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: 'Fira Code', monospace; font-size: 14px; text-shadow: 0 0 10px rgba(143, 51, 223, 0.3);">
-    ╭──────────────────────────────────────────────────────────╮
-    │  ░▒▓█ B E C O M E   W H O   Y O U   A R E █▓▒░           │
-    │  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~            │
-    │  "He who has a why to live for                            │
-    │   can bear almost any how"                                │
-    │                        — Friedrich Nietzsche              │
-    ╰──────────────────────────────────────────────────────────╯
-    
-    ╔══════════════════════════════════════════════════════════╗
-    ║     ✦  without music, life would be a mistake       ✦    ║
-    ║     ✦    and without code, the music has no form    ✦    ║
-    ╚══════════════════════════════════════════════════════════╝
+  <!-- Terminal header -->
+  <pre style="color: #00ff88; font-family: 'Fira Code', monospace; font-size: 14px; text-align: left; background: #0a0c0f; padding: 20px; border-radius: 8px; border: 1px solid #444; width: 80%; margin: 20px auto;">
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> neofetch --stdout
+<span style="color: #00ff88;">            .-:::::-.            ffdiracex@abyss
+          .-:::::::::-.          OS: Arch Linux x86_64
+         .-:::::::::::-.         Host: Custom Built
+        .::::::::::::::.         Kernel: 6.6.1-arch1-1
+        ::::::::::::::::         Uptime: I don't reboot
+       ::::::::::::::::::        Shell: Nietzsche 5.9
+      :::::::::::::::::::.       Terminal: /dev/chaos
+     .::::::::::::::::::::.      CPU: Will to Power (∞ cores)
+     ::::::::::::::::::::::      GPU: Abyss GTX 4090
+     ::::::::::::::::::::::      Memory: 16384MiB / what doesn't kill me
+     ::::::::::::::::::::::      
+      :::::::::::::::::::.      
+       ::::::::::::::::::       
+        ::::::::::::::::        
+         ::::::::::::::         
+          .::::::::::.          
+            .-:::::-.</span>
+
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> ls -la /usr/bin/
+<span style="color: #ffffff;">total 42
+lrwxrwxrwx   1 root root       21 Jan 01  1970 <span style="color: #00ff88;">python</span> -> /usr/bin/python3
+-rwxr-xr-x   1 root root  16242432 Jan 01  1970 <span style="color: #00ff88;">python3</span>
+lrwxrwxrwx   1 root root       24 Jan 01  1970 <span style="color: #00ff88;">g++</span> -> /usr/bin/g++-13
+-rwxr-xr-x   1 root root 112748032 Jan 01  1970 <span style="color: #00ff88;">g++-13</span>
+lrwxrwxrwx   1 root root       22 Jan 01  1970 <span style="color: #00ff88;">rustc</span> -> /usr/bin/rustc-1.73
+-rwxr-xr-x   1 root root  82657280 Jan 01  1970 <span style="color: #00ff88;">rustc-1.73</span>
+lrwxrwxrwx   1 root root       23 Jan 01  1970 <span style="color: #00ff88;">gcc</span> -> /usr/bin/gcc-13
+-rwxr-xr-x   1 root root  98713600 Jan 01  1970 <span style="color: #00ff88;">gcc-13</span>
+-rwxr-xr-x   1 root root   4210688 Jan 01  1970 <span style="color: #00ff88;">git</span>
+-rwxr-xr-x   1 root root   2842624 Jan 01  1970 <span style="color: #00ff88;">vim</span>
+-rwxr-xr-x   1 root root   1966080 Jan 01  1970 <span style="color: #00ff88;">tmux</span>
+-rwxr-xr-x   1 root root    991232 Jan 01  1970 <span style="color: #00ff88;">htop</span></span>
+
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> cat ~/.bashrc | grep PATH
+<span style="color: #00ff88;">export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
+export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/.cargo/bin</span>
+
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> which python3 rustc g++ git
+<span style="color: #00ff88;">/usr/bin/python3
+/usr/bin/rustc
+/usr/bin/g++
+/usr/bin/git</span>
+
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> readlink -f /usr/bin/python3
+<span style="color: #00ff88;">/usr/bin/python3.12</span>
+
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> file /usr/bin/python3
+<span style="color: #00ff88;">/usr/bin/python3: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 5.4.0, stripped</span>
+
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> ldd /usr/bin/python3
+<span style="color: #00ff88;">        linux-vdso.so.1 (0x00007ffe3b9f7000)
+        libc.so.6 => /usr/lib/libc.so.6 (0x00007f8a4a200000)
+        libpthread.so.0 => /usr/lib/libpthread.so.0 (0x00007f8a4a1fc000)
+        libdl.so.2 => /usr/lib/libdl.so.2 (0x00007f8a4a1f6000)
+        libutil.so.1 => /usr/lib/libutil.so.1 (0x00007f8a4a1f1000)
+        libm.so.6 => /usr/lib/libm.so.6 (0x00007f8a4a0ac000)
+        /lib64/ld-linux-x86-64.so.2 => /usr/lib64/ld-linux-x86-64.so.2 (0x00007f8a4a5f3000)</span>
+
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> pacman -Qo /usr/bin/python3 /usr/bin/g++ /usr/bin/rustc
+<span style="color: #00ff88;">/usr/bin/python3 is owned by python 3.12.0-1
+/usr/bin/g++ is owned by gcc 13.2.1-1
+/usr/bin/rustc is owned by rust 1.73.0-1</span>
+
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> stat /usr/bin/python3
+<span style="color: #00ff88;">  File: /usr/bin/python3 -> python3.12
+  Size: 21              Blocks: 0          IO Block: 4096   symbolic link
+Device: 8,2     Inode: 1234567     Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2024-01-01 00:00:00.000000000 +0000
+Modify: 2024-01-01 00:00:00.000000000 +0000
+Change: 2024-01-01 00:00:00.000000000 +0000</span>
+
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> echo "I use Arch btw"
+<span style="color: #00ff88;">I use Arch btw</span>
+
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> uname -a
+<span style="color: #00ff88;">Linux abyss 6.6.1-arch1-1 #1 SMP PREEMPT_DYNAMIC x8664 GNU/Linux</span>
+
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> df -h / /home /usr
+<span style="color: #00ff88;">Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2        50G   32G   18G  64% /
+/dev/sda3       200G  120G   80G  60% /home
+/dev/sda1        20G   12G  8.0G  60% /usr</span>
+
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> free -h
+<span style="color: #00ff88;">               total        used        free      shared  buff/cache   available
+Mem:            15Gi       5.2Gi       2.1Gi       345Mi       7.7Gi       9.1Gi
+Swap:          8.0Gi       0.0Ki       8.0Gi</span>
+
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> history | tail -5
+<span style="color: #00ff88;"> 1234  git clone https://github.com/ffdiracex/dotfiles
+ 1235  cd dotfiles && ./install.sh
+ 1236  sudo pacman -Syu
+ 1237  vim ~/.config/i3/config
+ 1238  echo "I have no bitches and I must scream"</span>
+
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> exit
+<span style="color: #00ff88;">logout</span>
   </pre>
 
-  <!-- Terminal-style intro -->
-  <div style="background: #0a0c0f; padding: 20px; border-radius: 12px; border: 1px solid #8F33DF; box-shadow: 0 0 20px rgba(143, 51, 223, 0.3); width: 80%; margin: 20px auto;">
-    <pre style="color: #00ff88; font-family: 'Fira Code', monospace; text-align: left; margin: 0;">
-<span style="color: #8F33DF;">┌─[</span><span style="color: #00ff88;">ffdiracex@abyss</span><span style="color: #8F33DF;">]─[</span><span style="color: #ffffff;">/dev/chaos</span><span style="color: #8F33DF;">]</span>
-<span style="color: #8F33DF;">└──╼ [</span><span style="color: #00ff88;">$</span><span style="color: #8F33DF;">]</span> <span style="color: #ffffff;">whoami</span>
-<span style="color: #00ff88;">      > ffdiracex — becoming who I am</span>
+  <!-- Stats as system info -->
+  <pre style="color: #00ff88; font-family: 'Fira Code', monospace; font-size: 12px; text-align: left; background: #0a0c0f; padding: 10px; border-radius: 4px; border: 1px solid #333; width: 60%; margin: 20px auto;">
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> github-stats --display
+<span style="color: #00ff88;">─────────────────────────────────
+ ⭐ Total Stars Earned: 42
+ 📦 Total Commits: 2,718
+ 🍴 Total Repos: 28
+ 🔀 Total Forks: 13
+ 👥 Followers: 69
+─────────────────────────────────</span>
 
-<span style="color: #8F33DF;">┌─[</span><span style="color: #00ff88;">ffdiracex@abyss</span><span style="color: #8F33DF;">]─[</span><span style="color: #ffffff;">~</span><span style="color: #8F33DF;">]</span>
-<span style="color: #8F33DF;">└──╼ [</span><span style="color: #00ff88;">$</span><span style="color: #8F33DF;">]</span> <span style="color: #ffffff;">cat /etc/will-to-power</span>
-<span style="color: #00ff88;">      > Compiler of chaos
-      > System architect of the abyss
-      > I came, I saw, I forked</span></pre>
-    
-    <!-- Tech stack with fixed badges -->
-    <p align="center">
-      <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-      <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
-      <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-      <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white" />
-    </p>
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> gh activity --last-30-days
+<span style="color: #00ff88;">2024-12-01  pushed to ffdiracex/dotfiles:main
+2024-12-03  opened PR #42 in ffdiracex/neovim-config
+2024-12-07  merged PR #69 in ffdiracex/arch-install
+2024-12-15  created repo ffdiracex/abyss-wm
+2024-12-24  starred 7 repos (merry christmas)
+2024-12-31  contributed to linux/linux (typo fix)</span>
+  </pre>
 
-    <pre style="color: #00ff88; font-family: 'Fira Code', monospace; text-align: left; margin: 10px 0 0 0;">
-<span style="color: #8F33DF;">┌─[</span><span style="color: #00ff88;">ffdiracex@abyss</span><span style="color: #8F33DF;">]─[</span><span style="color: #ffffff;">/proc/soul</span><span style="color: #8F33DF;">]</span>
-<span style="color: #8F33DF;">└──╼ [</span><span style="color: #00ff88;">$</span><span style="color: #8F33DF;">]</span> <span style="color: #ffffff;">cat soul/info</span>
-<span style="color: #00ff88;">      > Uptime: what doesn't kill me makes me stronger
-      > State: staring into the abyss (it stares back)
-      > Memory: that which does not kill me, segfaults
-      > Load average: 1.618 (the golden ratio of suffering)</span>
-
-<span style="color: #8F33DF;">┌─[</span><span style="color: #00ff88;">ffdiracex@abyss</span><span style="color: #8F33DF;">]─[</span><span style="color: #ffffff;">~</span><span style="color: #8F33DF;">]</span>
-<span style="color: #8F33DF;">└──╼ [</span><span style="color: #00ff88;">$</span><span style="color: #8F33DF;">]</span> <span style="color: #ffffff;">echo "I use Arch btw (and when you gaze long into the abyss, the abyss gazes also into you)"</span>
-<span style="color: #00ff88;">      > I use Arch btw (and when you gaze long into the abyss, the abyss gazes also into you)</span></pre>
-  </div>
-
-  <!-- Stats -->
-  <br/>
-  <details open>
-    <summary><span style="color: #8F33DF; font-size: 1.2em; font-weight: bold;">💀 WILL TO POWER METRICS 💀</span></summary>
-    <br/>
-    <p align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=ffdiracex&show_icons=true&theme=radical&bg_color=0a0c0f&title_color=8F33DF&icon_color=00ff88&text_color=ffffff&border_color=8F33DF&border_radius=10" width="48%" />
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ffdiracex&layout=compact&theme=radical&bg_color=0a0c0f&title_color=8F33DF&text_color=00ff88&border_color=8F33DF&border_radius=10" width="38%" />
-    </p>
-    
   <!-- Contribution graph -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ffdiracex&bg_color=0a0c0f&color=8F33DF&line=00ff88&point=ffffff&area=true&area_color=8F33DF&border_color=8F33DF&hide_border=true" width="95%"/>
-  </details>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ffdiracex&bg_color=0a0c0f&color=00ff88&line=8F33DF&point=ffffff&area=true&area_color=1a0c2a&hide_border=true" width="90%"/>
 
-  <!-- Nietzsche quotes -->
-  <br/>
-  <div style="background: linear-gradient(90deg, #0a0c0f, #1a0c2a, #0a0c0f); padding: 15px; border-radius: 8px; width: 80%; margin: 10px auto;">
-    <pre style="color: #ffd700; font-family: 'Fira Code', monospace; font-style: italic; animation: fade 15s infinite;">
-"The individual has always had to struggle to keep from being overwhelmed by the tribe.
- If you try it, you will be lonely often, and sometimes frightened.
- But no price is too high to pay for the privilege of owning yourself."
- — Friedrich Nietzsche
-    </pre>
-  </div>
+  <!-- Footer -->
+  <pre style="color: #00ff88; font-family: 'Fira Code', monospace; font-size: 12px; text-align: left; background: #0a0c0f; padding: 10px; border-radius: 4px; border: 1px solid #333; width: 80%; margin: 20px auto;">
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> echo "Thanks for visiting"
+<span style="color: #00ff88;">Thanks for visiting</span>
 
-  <br/>
-  <div style="background: linear-gradient(90deg, #0a0c0f, #2a0c1a, #0a0c0f); padding: 15px; border-radius: 8px; width: 80%; margin: 10px auto;">
-    <pre style="color: #ff6b6b; font-family: 'Fira Code', monospace; font-style: italic; animation: fade 12s infinite 2s;">
-"Battle not with monsters, lest ye become a monster,
- and if you gaze into the abyss, the abyss gazes also into you."
- — Friedrich Nietzsche, "Beyond Good and Evil"
-    </pre>
-  </div>
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> uptime
+<span style="color: #00ff88;"> 18:23:14 up 2 weeks, 0 users,  load average: 0.42, 0.69, 0.13</span>
 
-  <br/>
-  <div style="background: linear-gradient(90deg, #0a0c0f, #0c2a1a, #0a0c0f); padding: 15px; border-radius: 8px; width: 80%; margin: 10px auto;">
-    <pre style="color: #00ff88; font-family: 'Fira Code', monospace; font-style: italic; animation: fade 18s infinite 4s;">
-"You have your way. I have my way.
- As for the right way, the correct way, and the only way,
- it does not exist."
- — Friedrich Nietzsche
-    </pre>
-  </div>
-
-  <!-- Animated footer -->
-  <br/>
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%"/>
-  <br/>
-  
-  <pre style="font-family: 'Fira Code', monospace; background: linear-gradient(90deg, #8F33DF, #00ff88, #ff6b6b); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-╭──────────────────────────────────────────────────────────╮
-│  <span style="color: #00ff88;">$ echo</span> "Thus spake ffdiracex"                           │
-│  <span style="color: #ffd700;">💀 What doesn't kill you makes you stronger 💀</span>        │
-│  <span style="color: #ff6b6b;">🌌 Live dangerously — fork the main branch 🌌</span>        │
-╰──────────────────────────────────────────────────────────╯
+<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> <span style="color: #ffffff;">_</span>
   </pre>
   
-  <!-- Social badges -->
-  <p align="center">
-    <a href="https://github.com/ffdiracex">
-      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
-    </a>
-    <img src="https://komarev.com/ghpvc/?username=ffdiracex&style=for-the-badge&color=8F33DF" />
+  <p>
+    <img src="https://komarev.com/ghpvc/?username=ffdiracex&style=flat-square&color=8F33DF" />
   </p>
-  
-  <style>
-    @keyframes fade {
-      0% { opacity: 0.3; }
-      50% { opacity: 1; }
-      100% { opacity: 0.3; }
-    }
-  </style>
 </div>
