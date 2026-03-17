@@ -83,16 +83,7 @@ bindsym $mod+Shift+r exec "i3-msg restart | echo 'reloading... like a peasant wr
  1338  echo "I have no bitches and I must free()"
  1339  neofetch | lolcat</span>
 
-<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">cat /home/ffdiracex/.plan</span>
-<span style="color: #00ff88;">────────────────────────────────────────────────────────────────
-                       ____    _   _   _   ____  
-                      / ___|  | | | | | | |  _ \ 
-                     | |      | | | | | | | |_) |
-                     | |___   | |_| | |_| |  __/ 
-                      \____|   \___/  \___/ |_|   
-                                                
-                      C IS LOVE, C IS LIFE
-────────────────────────────────────────────────────────────────
+-----------------------------------------------------
 I live in source code. I dream in pointers.
 I write my own malloc. I free() when I'm done.
 I've seen things you people wouldn't believe.
