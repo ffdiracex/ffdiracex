@@ -1,227 +1,221 @@
 <div align="center">
   
-  <!-- Pure terminal, no ASCII art, just raw command output -->
+  <!-- Pure terminal, just raw command output -->
   <pre style="color: #00ff88; font-family: 'Fira Code', 'Courier New', monospace; font-size: 13px; text-align: left; background: #000000; padding: 25px; border: 2px solid #33ff33; width: 85%; margin: 20px auto; box-shadow: 0 0 10px #00ff88;">
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">uname -a</span>
-<span style="color: #00ff88;">OpenBSD ffdiracex.obsd 7.5 GENERIC#0 amd64</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">whoami</span>
+<span style="color: #00ff88;">ffdiracex</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">id</span>
-<span style="color: #00ff88;">uid=1000(ffdiracex) gid=1000(ffdiracex) groups=1000(ffdiracex),0(wheel),4(kmem),5(operator),20(staff)</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">cat /etc/passwd | grep ffdiracex</span>
+<span style="color: #00ff88;">ffdiracex:x:1000:1000:Pointer to a Lord:/home/ffdiracex:/bin/bash</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">cat /etc/release</span>
-<span style="color: #00ff88;">OpenBSD/amd64 7.5</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">sudo cat /etc/shadow | grep ffdiracex</span>
+<span style="color: #ff0000;">[sudo] password for ffdiracex: </span>
+<span style="color: #00ff88;">ffdiracex:$6$rounds=656000$MallocIsLife$NULL.420:19769:0:99999:7:::</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">sysctl kern.version</span>
-<span style="color: #00ff88;">kern.version=OpenBSD 7.5 (GENERIC) #0: Mon Mar 20 14:00:00 MDT 2024
-    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">echo $USER</span>
+<span style="color: #00ff88;">ffdiracex</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">pkg_info -a | grep -E '^(python|gcc|rust)'</span>
-<span style="color: #00ff88;">python-3.11.6         interpreted object-oriented programming language
-gcc-11.4.0            GNU C compiler
-rust-1.74.0           safe, concurrent, practical language</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">echo $SKILL_LEVEL</span>
+<span style="color: #00ff88;">*(int*)NULL // undefined but massive</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">which python3 g++ rustc doas vim tmux</span>
-<span style="color: #00ff88;">/usr/local/bin/python3
-/usr/local/bin/g++
-/usr/local/bin/rustc
-/usr/bin/doas
-/usr/local/bin/vim
-/usr/local/bin/tmux</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">echo $INTELLIGENCE</span>
+<span style="color: #00ff88;">> /dev/null 2>&1 # too large to display, returns (void*)0</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">readlink -f /usr/local/bin/python3</span>
-<span style="color: #00ff88;">/usr/local/bin/python3.11</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">cat ~/.bashrc | grep -i genius</span>
+<span style="color: #00ff88;">export GENIUS_LEVEL=unlimited
+export BRAIN_CAPACITY=$(df -h /dev/brain | grep -oP '\d+%' | sed 's/%//')% # always 100%
+export CC=gcc # obviously
+export CFLAGS="-Wall -Wextra -Wpedantic -Werror -O3 -march=native -fno-stack-protector # real programmers don't need stack canaries"</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">file /usr/local/bin/python3.11</span>
-<span style="color: #00ff88;">/usr/local/bin/python3.11: ELF 64-bit LSB executable, x86-64, version 1 - OpenBSD</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">df -h /home/ffdiracex/brain</span>
+<span style="color: #00ff88;">Filesystem      Size  Used Avail Use% Mounted on
+/dev/brain      1.0P  1.0P     0 100% /home/ffdiracex/brain</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">ls -la /usr/local/bin | grep -E '(python|g\+\+|rustc|gcc)' | head -5</span>
-<span style="color: #00ff88;">lrwxr-xr-x  1 root  bin      21 Mar 20 14:00 python@ -> /usr/local/bin/python3
--rwxr-xr-x  1 root  bin  12.2M Mar 20 14:00 python3.11*
-lrwxr-xr-x  1 root  bin      16 Mar 20 14:00 python3@ -> python3.11
--rwxr-xr-x  1 root  bin  89.3M Mar 20 14:00 g++*
--rwxr-xr-x  1 root  bin  78.2M Mar 20 14:00 gcc*</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">cat /proc/cpuinfo | grep "model name" | head -1</span>
+<span style="color: #00ff88;">model name      : ffdiracex's Neocortex (9999 cores, 1.21 jiggahertz, direct memory access)</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">cat ~/.profile</span>
-<span style="color: #00ff88;">#!/bin/sh
-#
-# ffdiracex's OpenBSD .profile
-#
-export PATH=/home/ffdiracex/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export EDITOR=vim
-export VISUAL=vim
-export TERM=xterm-256color
-export PKG_PATH=https://cdn.openbsd.org/pub/OpenBSD/7.5/packages/amd64/
-export CVSROOT=anoncvs@anoncvs.eu.openbsd.org:/cvs
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">free -h | grep Mem</span>
+<span style="color: #00ff88;">Mem:           1.0Y    999T    1.0T    0.0T    0.0T    999T</span>
 
-alias ls='ls -G'
-alias ll='ls -l'
-alias la='ls -a'
-alias cvs='cvs -z3'
-alias doas='doas'
-alias vi='vim'</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">uptime</span>
+<span style="color: #00ff88;"> 14:00:00 up 1337 days, 42 min,  load average: 0.01, 0.02, 0.01 (i'm just warming up, no segfaults yet)</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">cat ~/.cshrc</span>
-<span style="color: #00ff88;"># $OpenBSD: dot.cshrc,v 1.7 2023/01/15 12:00:00 deraadt Exp $
-#
-# ffdiracex's cshrc
-#
-set path = (/home/ffdiracex/bin /usr/local/bin /usr/bin /bin /usr/sbin /sbin)
-setenv EDITOR vim
-setenv TERM xterm-256color
-setenv PKG_PATH https://cdn.openbsd.org/pub/OpenBSD/7.5/packages/amd64/
-setenv CVSROOT anoncvs@anoncvs.eu.openbsd.org:/cvs
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">cat ~/.bashrc | grep -E '(alias|function)'</span>
+<span style="color: #00ff88;">alias fuck='sudo $(history -p !!)' # because I never make mistakes
+alias please='sudo'
+alias rm='rm -i' # I'm not a monster
+alias grep='grep --color=auto'
+alias ls='ls --color=auto'
+alias vim='nvim'
+alias :q='exit'
+alias :wq='echo "This isn't vi, moron"'
+alias python='python3'
+alias fuckingpython='python3 -c "import this; print(\"PEP 20 is for plebs\")"'
+alias javascript='echo "console.log(\"JavaScript? In MY terminal? Segmentation fault (core dumped)\")"'
+alias java='echo "java: command not found. Good riddance. C is love, C is life."'
+alias npm='echo "node_modules is 1.2GB and counting... abort"'
+alias c='gcc -std=c99 -o $(basename $1 .c) $1 && ./$(basename $1 .c) # real programmers use this'
+alias gdb='gdb -q # quiet mode because I know what I'm doing'
+alias valgrind='valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes # because I don't leak (usually)'</span>
 
-alias ls ls -G
-alias ll ls -l
-alias la ls -a
-alias h history 25
-alias j jobs</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">cat /home/ffdiracex/.config/i3/config | grep bindsym | head -5</span>
+<span style="color: #00ff88;">bindsym $mod+Return exec st
+bindsym $mod+d exec dmenu_run
+bindsym $mod+Shift+q kill
+bindsym $mod+Shift+e exec "i3-msg exit | echo 'coward'"
+bindsym $mod+Shift+r exec "i3-msg restart | echo 'reloading... like a peasant writing in Python'</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">cvs -d anoncvs@anoncvs.eu.openbsd.org:/cvs co -P src/usr.bin/vi</span>
-<span style="color: #00ff88;">cvs checkout: Updating src/usr.bin/vi
-U src/usr.bin/vi/Makefile
-U src/usr.bin/vi/README
-U src/usr.bin/vi/ex.c
-... (output truncated)</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">history | grep -i "fixed" | wc -l</span>
+<span style="color: #00ff88;">0</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">doas pkg_add rust python g++</span>
-<span style="color: #00ff88;">quirks-6.114 signed on 2024-03-20T14:00:00Z
-rust-1.74.0: ok
-python-3.11.6: ok
-gcc-11.4.0: ok</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">history | grep -i "broke" | wc -l</span>
+<span style="color: #00ff88;">1337</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">cat ~/.xsession</span>
-<span style="color: #00ff88;">#!/bin/sh
-#
-# ~/.xsession
-#
-exec cwm</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">history | tail -10</span>
+<span style="color: #00ff88;"> 1330  git commit -m "magic"
+ 1331  git push origin main --force-with-lease # YOLO
+ 1332  sudo pacman -Syu --noconfirm
+ 1333  echo "I use Arch btw"
+ 1334  vim /etc/pacman.d/mirrorlist
+ 1335  gcc -o hello hello.c && ./hello
+ 1336  gdb ./segfaulting_program
+ 1337  rm -rf /tmp/plebs
+ 1338  echo "I have no bitches and I must free()"
+ 1339  neofetch | lolcat</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">cat ~/.cwmrc</span>
-<span style="color: #00ff88;"># cwm configuration
-#
-command -t terminal xterm
-command -t browser firefox
-command -t mail thunderbird
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">cat /home/ffdiracex/.plan</span>
+<span style="color: #00ff88;">────────────────────────────────────────────────────────────────
+                       ____    _   _   _   ____  
+                      / ___|  | | | | | | |  _ \ 
+                     | |      | | | | | | | |_) |
+                     | |___   | |_| | |_| |  __/ 
+                      \____|   \___/  \___/ |_|   
+                                                
+                      C IS LOVE, C IS LIFE
+────────────────────────────────────────────────────────────────
+I live in source code. I dream in pointers.
+I write my own malloc. I free() when I'm done.
+I've seen things you people wouldn't believe.
+Dangling pointers off the shoulder of Orion.
+I watched buffer overflows glitter in the dark near the Tannhäuser Gate.
+All those moments will be lost in time, like segfaults in rain.
+Time to die.
 
-bind-key CM-Restart exec cwm
+────────────────────────────────────────────────────────────────
+CURRENT PROJECTS:
+  > rewriting nginx in pure C (because rust is for people afraid of pointers)
+  > writing my own WM in C (because i3 is too bloated, dwm is too minimalist)
+  > kernel module that plays rickroll on boot (in C, obviously)
+  > bitcoin miner in bash (why? because I can, but the core is in C)
+  > my own libc (because glibc is for normies)
+  > static analysis tool that judges your coding style
 
-color activeborder "#8F33DF"
-color inactiveborder "#333333"
-color menubg "#000000"
-color menufg "#00ff88"
-color font "#ffffff"</span>
+────────────────────────────────────────────────────────────────
+SKILLS:
+  C:           I wrote my own kernel module just to feel something
+  Rust:        I use it when I want the compiler to hold my hand
+  Python:      I use it for glue code while judging it silently
+  C++:         It's okay I guess, but templates give me PTSD
+  Assembly:    I speak to the metal and the metal listens (sometimes it segfaults)
+  JavaScript:  I don't touch that shit (see: "segfault in rain")
+  Make:        .PHONY: all clean install uninstall install-world-domination
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">df -h /home /usr /var</span>
-<span style="color: #00ff88;">Filesystem     Size    Used   Avail Capacity  Mounted on
-/dev/sd0a       99M    6.4M     88M     7%    /
-/dev/sd0d      7.9G    3.1G    4.5G    41%    /usr
-/dev/sd0e      3.9G    344M    3.4G     9%    /var
-/dev/sd0f      9.9G    8.7G    757M    92%    /home</span>
+────────────────────────────────────────────────────────────────
+LANGUAGE RANKINGS:
+  1.  C    - The One True Language
+  2.  Rust - The Overachiever
+  3.  C++  - The Complicated Ex
+  4.  Python - The Script Kiddie
+  5.  Bash - The Wizard's Staff
+  6.  Assembly - The Dark Arts
+  7.  Java - The Enterprise Nightmare
+  8.  JavaScript - The Plague
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">vmstat</span>
-<span style="color: #00ff88;"> procs    memory       page                    disks    traps          cpu
- r b w    avm    fre  flt  re  pi  po  fr  sr wd0  intr   syscl  usr  idl
- 2 0 0  34124  16274   21   0   0   0  15   5   0    103    2895    3   97</span>
+────────────────────────────────────────────────────────────────</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">systat vmstat 1 3</span>
-<span style="color: #00ff88;">   1 users Load 0.14 0.07 0.03                    ffdiracex@obsd: Wed Mar 20 14:00:00
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">cat /home/ffdiracex/.github/stats</span>
+<span style="color: #00ff88;">────────────────────────────────────────────────────────────────
+                    GITHUB STATISTICS
+────────────────────────────────────────────────────────────────
+  Commits:         git log --oneline | wc -l # it's over 9000
+  Lines written:   find . -name "*.c" -o -name "*.h" | xargs wc -l | tail -1
+  Bugs introduced: #define BUGS 0 // intentional
+  PRs merged:      All of them (maintainers fear my pointer arithmetic)
+  Issues opened:   Only against electron apps and JavaScript frameworks
+  Stars received:  More than Linus has opinions
+  Forks:           Imitation is the sincerest form of flattery
+  Followers:       They want to learn my ways
+  Following:       Nobody's on my level (except maybe Ken Thompson)
+────────────────────────────────────────────────────────────────
+LANGUAGE BREAKDOWN (by bytes written):
+  C:            ████████████████████ 98.2%
+  Rust:         ░░░░░░░░░░░░░░░░░░░░ 1.2%
+  Python:       ░░░░░░░░░░░░░░░░░░░░ 0.4%
+  C++:          ░░░░░░░░░░░░░░░░░░░░ 0.1%
+  Shell:        ░░░░░░░░░░░░░░░░░░░░ 0.1%
+  JavaScript:   ░░░░░░░░░░░░░░░░░░░░ 0.0% (intentional)
+────────────────────────────────────────────────────────────────</span>
 
-CPU: |     3.6% |    0.0% |    0.0% |   96.4% 
-      user      nice      sys     idle
-...
-</span>
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">netstat -rn | grep default</span>
-<span style="color: #00ff88;">default            10.0.1.1           UGS       0    12942   em0</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">cat /home/ffdiracex/.opinions</span>
+<span style="color: #00ff88;">────────────────────────────────────────────────────────────────
+                    UNASKED OPINIONS
+────────────────────────────────────────────────────────────────
+  tabs vs spaces:        Tabs (spaces are for cowards, both are worse than C)
+  vim vs emacs:          vim (emacs is an OS, not an editor, but both are worse than ed)
+  systemd:               It's fine, I guess (please don't hurt me, but init scripts in C would be better)
+  JavaScript:            Segmentation fault (core dumped)
+  Python vs C:           There is no comparison. C is the benchmark.
+  C vs C++:              C. Always C. KISS principle.
+  Rust:                  It's like C with training wheels. Sometimes I need training wheels.
+  garbage collection:    free() is love, free() is life
+  manual memory management: The only real way to live
+  Arch vs everything:    I use Arch btw (compiled from source, obviously)
+  bitches:               I have none (and I'm at peace with it, my computer loves me)
+────────────────────────────────────────────────────────────────</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">ifconfig em0 | grep inet</span>
-<span style="color: #00ff88;">        inet 10.0.1.42 netmask 0xffffff00 broadcast 10.0.1.255
-        inet6 fe80::1a2b:3c4d:5e6f:7a8b%em0 prefixlen 64 scopeid 0x1</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">cat /home/ffdiracex/.favorite_code</span>
+<span style="color: #00ff88;">────────────────────────────────────────────────────────────────
+                    BEAUTIFUL C CODE
+────────────────────────────────────────────────────────────────
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">tail -20 /var/log/messages | grep -i error</span>
-<span style="color: #00ff88;">Mar 20 13:47:22 obsd /bsd: uvfs: nothing to see here
-Mar 20 14:00:00 obsd syslogd: restart</span>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">history 10</span>
-<span style="color: #00ff88;">  421  cvs up -Pd src
-  422  doas pkg_add firefox
-  423  vi ~/.cwmrc
-  424  xinit
-  425  pkg_info -Q rust
-  426  doas pkg_add rust
-  427  rustc --version
-  428  git clone https://github.com/ffdiracex/dotfiles
-  429  cd dotfiles && ./install.sh
-  430  echo "OpenBSD - secure by default, insane by choice"</span>
+int main(void) {
+    printf("I use Arch btw\n");
+    
+    char *love = malloc(42 * sizeof(char));
+    if (love == NULL) {
+        fprintf(stderr, "Even malloc knows I have no bitches\n");
+        return 1;
+    }
+    
+    sprintf(love, "C is love, C is life");
+    printf("%s\n", love);
+    
+    free(love); // always free your love, kids
+    return 0;
+}
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">cal</span>
-<span style="color: #00ff88;">     March 2024
-Su Mo Tu We Th Fr Sa
-                1  2
- 3  4  5  6  7  8  9
-10 11 12 13 14 15 16
-17 18 19 20 21 22 23
-24 25 26 27 28 29 30
-31</span>
+────────────────────────────────────────────────────────────────</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">date</span>
-<span style="color: #00ff88;">Wed Mar 20 14:00:00 MDT 2024</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">echo "I use Arch btw"</span>
+<span style="color: #00ff88;">I use Arch btw</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">uptime</span>
-<span style="color: #00ff88;"> 2:00PM  up 42 days,  6:42, 1 user, load averages: 0.07, 0.03, 0.01</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">gcc --version | head -1</span>
+<span style="color: #00ff88;">gcc (GCC) 13.2.1 20230801</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">echo $SHELL</span>
-<span style="color: #00ff88;">/bin/ksh</span>
-
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">echo "I use OpenBSD btw (and I still have no bitches)"</span>
-<span style="color: #00ff88;">I use OpenBSD btw (and I still have no bitches)</span>
-
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">exit</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">exit</span>
 <span style="color: #00ff88;">logout</span>
 
-<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">_</span>
-  </pre>
-
-  <!-- GitHub stats as raw numbers, no graphs -->
-  <pre style="color: #00ff88; font-family: 'Fira Code', 'Courier New', monospace; font-size: 13px; text-align: left; background: #000000; padding: 15px; border: 1px solid #33ff33; width: 60%; margin: 10px auto;">
-
-<span style="color: #ffff00;">ffdiracex@obsd:~$</span> <span style="color: #ffffff;">cat /home/ffdiracex/.github/stats</span>
-<span style="color: #00ff88;">────────────────────────────────────────────────
-GITHUB STATISTICS - Last updated: 2024-03-20
-────────────────────────────────────────────────
-Public Repos:     28
-Private Repos:    6
-Total Commits:    2,718
-Pull Requests:    143
-Issues Created:   67
-Issues Closed:    58
-Stars Received:   42
-Followers:        69
-Following:        13
-────────────────────────────────────────────────
-LANGUAGES (bytes):
-  C++:       1,234,567
-  Python:    987,654
-  Rust:      456,789
-  Shell:     123,456
-  C:          98,765
-────────────────────────────────────────────────</span>
-
-<span style="color: #ffff00;">ffdiracex@obsd:~$</span> <span style="color: #ffffff;">tail -5 /home/ffdiracex/.github/activity.log</span>
-<span style="color: #00ff88;">2024-03-19T23:42:13  commit: fix null pointer dereference in abyss-wm
-2024-03-19T23:58:47  push: origin HEAD -> main (3 commits)
-2024-03-20T01:15:22  issue: opened #42 "memory leak in event loop"
-2024-03-20T04:32:01  pr: merged #69 "add pledge() and unveil() sandboxing"
-2024-03-20T13:47:55  star: starred openbsd/src</span>
-
-<span style="color: #ffff00;">ffdiracex@obsd:~$</span> <span style="color: #ffffff;">_</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">_</span>
   </pre>
 
   <!-- Footer with just a blinking cursor -->
   <pre style="color: #00ff88; font-family: 'Fira Code', 'Courier New', monospace; font-size: 13px; text-align: left; background: #000000; padding: 10px; border: none; width: 85%; margin: 20px auto;">
-<span style="color: #ffff00;">ffdiracex@obsd:~$</span> <span style="color: #ffffff;">echo 'EOF'</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">echo 'EOF'</span>
 <span style="color: #00ff88;">EOF</span>
 
-<span style="color: #ffff00;">ffdiracex@obsd:~$</span> <span style="color: #ffffff;">_</span>
+<span style="color: #ffff00;">[ffdiracex@archbtw ~]$</span> <span style="color: #ffffff;">_</span>
   </pre>
 </div>
