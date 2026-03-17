@@ -1,144 +1,227 @@
 <div align="center">
   
-  <!-- Terminal header -->
-  <pre style="color: #00ff88; font-family: 'Fira Code', monospace; font-size: 14px; text-align: left; background: #0a0c0f; padding: 20px; border-radius: 8px; border: 1px solid #444; width: 80%; margin: 20px auto;">
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> neofetch --stdout
-<span style="color: #00ff88;">            .-:::::-.            ffdiracex@abyss
-          .-:::::::::-.          OS: Arch Linux x86_64
-         .-:::::::::::-.         Host: Custom Built
-        .::::::::::::::.         Kernel: 6.6.1-arch1-1
-        ::::::::::::::::         Uptime: I don't reboot
-       ::::::::::::::::::        Shell: Nietzsche 5.9
-      :::::::::::::::::::.       Terminal: /dev/chaos
-     .::::::::::::::::::::.      CPU: Will to Power (∞ cores)
-     ::::::::::::::::::::::      GPU: Abyss GTX 4090
-     ::::::::::::::::::::::      Memory: 16384MiB / what doesn't kill me
-     ::::::::::::::::::::::      
-      :::::::::::::::::::.      
-       ::::::::::::::::::       
-        ::::::::::::::::        
-         ::::::::::::::         
-          .::::::::::.          
-            .-:::::-.</span>
+  <!-- Pure terminal, no ASCII art, just raw command output -->
+  <pre style="color: #00ff88; font-family: 'Fira Code', 'Courier New', monospace; font-size: 13px; text-align: left; background: #000000; padding: 25px; border: 2px solid #33ff33; width: 85%; margin: 20px auto; box-shadow: 0 0 10px #00ff88;">
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">uname -a</span>
+<span style="color: #00ff88;">OpenBSD ffdiracex.obsd 7.5 GENERIC#0 amd64</span>
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> ls -la /usr/bin/
-<span style="color: #ffffff;">total 42
-lrwxrwxrwx   1 root root       21 Jan 01  1970 <span style="color: #00ff88;">python</span> -> /usr/bin/python3
--rwxr-xr-x   1 root root  16242432 Jan 01  1970 <span style="color: #00ff88;">python3</span>
-lrwxrwxrwx   1 root root       24 Jan 01  1970 <span style="color: #00ff88;">g++</span> -> /usr/bin/g++-13
--rwxr-xr-x   1 root root 112748032 Jan 01  1970 <span style="color: #00ff88;">g++-13</span>
-lrwxrwxrwx   1 root root       22 Jan 01  1970 <span style="color: #00ff88;">rustc</span> -> /usr/bin/rustc-1.73
--rwxr-xr-x   1 root root  82657280 Jan 01  1970 <span style="color: #00ff88;">rustc-1.73</span>
-lrwxrwxrwx   1 root root       23 Jan 01  1970 <span style="color: #00ff88;">gcc</span> -> /usr/bin/gcc-13
--rwxr-xr-x   1 root root  98713600 Jan 01  1970 <span style="color: #00ff88;">gcc-13</span>
--rwxr-xr-x   1 root root   4210688 Jan 01  1970 <span style="color: #00ff88;">git</span>
--rwxr-xr-x   1 root root   2842624 Jan 01  1970 <span style="color: #00ff88;">vim</span>
--rwxr-xr-x   1 root root   1966080 Jan 01  1970 <span style="color: #00ff88;">tmux</span>
--rwxr-xr-x   1 root root    991232 Jan 01  1970 <span style="color: #00ff88;">htop</span></span>
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">id</span>
+<span style="color: #00ff88;">uid=1000(ffdiracex) gid=1000(ffdiracex) groups=1000(ffdiracex),0(wheel),4(kmem),5(operator),20(staff)</span>
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> cat ~/.bashrc | grep PATH
-<span style="color: #00ff88;">export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
-export PATH=$PATH:~/.local/bin
-export PATH=$PATH:~/.cargo/bin</span>
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">cat /etc/release</span>
+<span style="color: #00ff88;">OpenBSD/amd64 7.5</span>
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> which python3 rustc g++ git
-<span style="color: #00ff88;">/usr/bin/python3
-/usr/bin/rustc
-/usr/bin/g++
-/usr/bin/git</span>
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">sysctl kern.version</span>
+<span style="color: #00ff88;">kern.version=OpenBSD 7.5 (GENERIC) #0: Mon Mar 20 14:00:00 MDT 2024
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC</span>
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> readlink -f /usr/bin/python3
-<span style="color: #00ff88;">/usr/bin/python3.12</span>
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">pkg_info -a | grep -E '^(python|gcc|rust)'</span>
+<span style="color: #00ff88;">python-3.11.6         interpreted object-oriented programming language
+gcc-11.4.0            GNU C compiler
+rust-1.74.0           safe, concurrent, practical language</span>
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> file /usr/bin/python3
-<span style="color: #00ff88;">/usr/bin/python3: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 5.4.0, stripped</span>
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">which python3 g++ rustc doas vim tmux</span>
+<span style="color: #00ff88;">/usr/local/bin/python3
+/usr/local/bin/g++
+/usr/local/bin/rustc
+/usr/bin/doas
+/usr/local/bin/vim
+/usr/local/bin/tmux</span>
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> ldd /usr/bin/python3
-<span style="color: #00ff88;">        linux-vdso.so.1 (0x00007ffe3b9f7000)
-        libc.so.6 => /usr/lib/libc.so.6 (0x00007f8a4a200000)
-        libpthread.so.0 => /usr/lib/libpthread.so.0 (0x00007f8a4a1fc000)
-        libdl.so.2 => /usr/lib/libdl.so.2 (0x00007f8a4a1f6000)
-        libutil.so.1 => /usr/lib/libutil.so.1 (0x00007f8a4a1f1000)
-        libm.so.6 => /usr/lib/libm.so.6 (0x00007f8a4a0ac000)
-        /lib64/ld-linux-x86-64.so.2 => /usr/lib64/ld-linux-x86-64.so.2 (0x00007f8a4a5f3000)</span>
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">readlink -f /usr/local/bin/python3</span>
+<span style="color: #00ff88;">/usr/local/bin/python3.11</span>
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> pacman -Qo /usr/bin/python3 /usr/bin/g++ /usr/bin/rustc
-<span style="color: #00ff88;">/usr/bin/python3 is owned by python 3.12.0-1
-/usr/bin/g++ is owned by gcc 13.2.1-1
-/usr/bin/rustc is owned by rust 1.73.0-1</span>
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">file /usr/local/bin/python3.11</span>
+<span style="color: #00ff88;">/usr/local/bin/python3.11: ELF 64-bit LSB executable, x86-64, version 1 - OpenBSD</span>
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> stat /usr/bin/python3
-<span style="color: #00ff88;">  File: /usr/bin/python3 -> python3.12
-  Size: 21              Blocks: 0          IO Block: 4096   symbolic link
-Device: 8,2     Inode: 1234567     Links: 1
-Access: (0777/lrwxrwxrwx)  Uid: (    0/    root)   Gid: (    0/    root)
-Access: 2024-01-01 00:00:00.000000000 +0000
-Modify: 2024-01-01 00:00:00.000000000 +0000
-Change: 2024-01-01 00:00:00.000000000 +0000</span>
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">ls -la /usr/local/bin | grep -E '(python|g\+\+|rustc|gcc)' | head -5</span>
+<span style="color: #00ff88;">lrwxr-xr-x  1 root  bin      21 Mar 20 14:00 python@ -> /usr/local/bin/python3
+-rwxr-xr-x  1 root  bin  12.2M Mar 20 14:00 python3.11*
+lrwxr-xr-x  1 root  bin      16 Mar 20 14:00 python3@ -> python3.11
+-rwxr-xr-x  1 root  bin  89.3M Mar 20 14:00 g++*
+-rwxr-xr-x  1 root  bin  78.2M Mar 20 14:00 gcc*</span>
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> echo "I use Arch btw"
-<span style="color: #00ff88;">I use Arch btw</span>
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">cat ~/.profile</span>
+<span style="color: #00ff88;">#!/bin/sh
+#
+# ffdiracex's OpenBSD .profile
+#
+export PATH=/home/ffdiracex/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export EDITOR=vim
+export VISUAL=vim
+export TERM=xterm-256color
+export PKG_PATH=https://cdn.openbsd.org/pub/OpenBSD/7.5/packages/amd64/
+export CVSROOT=anoncvs@anoncvs.eu.openbsd.org:/cvs
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> uname -a
-<span style="color: #00ff88;">Linux abyss 6.6.1-arch1-1 #1 SMP PREEMPT_DYNAMIC x8664 GNU/Linux</span>
+alias ls='ls -G'
+alias ll='ls -l'
+alias la='ls -a'
+alias cvs='cvs -z3'
+alias doas='doas'
+alias vi='vim'</span>
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> df -h / /home /usr
-<span style="color: #00ff88;">Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda2        50G   32G   18G  64% /
-/dev/sda3       200G  120G   80G  60% /home
-/dev/sda1        20G   12G  8.0G  60% /usr</span>
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">cat ~/.cshrc</span>
+<span style="color: #00ff88;"># $OpenBSD: dot.cshrc,v 1.7 2023/01/15 12:00:00 deraadt Exp $
+#
+# ffdiracex's cshrc
+#
+set path = (/home/ffdiracex/bin /usr/local/bin /usr/bin /bin /usr/sbin /sbin)
+setenv EDITOR vim
+setenv TERM xterm-256color
+setenv PKG_PATH https://cdn.openbsd.org/pub/OpenBSD/7.5/packages/amd64/
+setenv CVSROOT anoncvs@anoncvs.eu.openbsd.org:/cvs
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> free -h
-<span style="color: #00ff88;">               total        used        free      shared  buff/cache   available
-Mem:            15Gi       5.2Gi       2.1Gi       345Mi       7.7Gi       9.1Gi
-Swap:          8.0Gi       0.0Ki       8.0Gi</span>
+alias ls ls -G
+alias ll ls -l
+alias la ls -a
+alias h history 25
+alias j jobs</span>
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> history | tail -5
-<span style="color: #00ff88;"> 1234  git clone https://github.com/ffdiracex/dotfiles
- 1235  cd dotfiles && ./install.sh
- 1236  sudo pacman -Syu
- 1237  vim ~/.config/i3/config
- 1238  echo "I have no bitches and I must scream"</span>
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">cvs -d anoncvs@anoncvs.eu.openbsd.org:/cvs co -P src/usr.bin/vi</span>
+<span style="color: #00ff88;">cvs checkout: Updating src/usr.bin/vi
+U src/usr.bin/vi/Makefile
+U src/usr.bin/vi/README
+U src/usr.bin/vi/ex.c
+... (output truncated)</span>
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> exit
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">doas pkg_add rust python g++</span>
+<span style="color: #00ff88;">quirks-6.114 signed on 2024-03-20T14:00:00Z
+rust-1.74.0: ok
+python-3.11.6: ok
+gcc-11.4.0: ok</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">cat ~/.xsession</span>
+<span style="color: #00ff88;">#!/bin/sh
+#
+# ~/.xsession
+#
+exec cwm</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">cat ~/.cwmrc</span>
+<span style="color: #00ff88;"># cwm configuration
+#
+command -t terminal xterm
+command -t browser firefox
+command -t mail thunderbird
+
+bind-key CM-Restart exec cwm
+
+color activeborder "#8F33DF"
+color inactiveborder "#333333"
+color menubg "#000000"
+color menufg "#00ff88"
+color font "#ffffff"</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">df -h /home /usr /var</span>
+<span style="color: #00ff88;">Filesystem     Size    Used   Avail Capacity  Mounted on
+/dev/sd0a       99M    6.4M     88M     7%    /
+/dev/sd0d      7.9G    3.1G    4.5G    41%    /usr
+/dev/sd0e      3.9G    344M    3.4G     9%    /var
+/dev/sd0f      9.9G    8.7G    757M    92%    /home</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">vmstat</span>
+<span style="color: #00ff88;"> procs    memory       page                    disks    traps          cpu
+ r b w    avm    fre  flt  re  pi  po  fr  sr wd0  intr   syscl  usr  idl
+ 2 0 0  34124  16274   21   0   0   0  15   5   0    103    2895    3   97</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">systat vmstat 1 3</span>
+<span style="color: #00ff88;">   1 users Load 0.14 0.07 0.03                    ffdiracex@obsd: Wed Mar 20 14:00:00
+
+CPU: |     3.6% |    0.0% |    0.0% |   96.4% 
+      user      nice      sys     idle
+...
+</span>
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">netstat -rn | grep default</span>
+<span style="color: #00ff88;">default            10.0.1.1           UGS       0    12942   em0</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">ifconfig em0 | grep inet</span>
+<span style="color: #00ff88;">        inet 10.0.1.42 netmask 0xffffff00 broadcast 10.0.1.255
+        inet6 fe80::1a2b:3c4d:5e6f:7a8b%em0 prefixlen 64 scopeid 0x1</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">tail -20 /var/log/messages | grep -i error</span>
+<span style="color: #00ff88;">Mar 20 13:47:22 obsd /bsd: uvfs: nothing to see here
+Mar 20 14:00:00 obsd syslogd: restart</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">history 10</span>
+<span style="color: #00ff88;">  421  cvs up -Pd src
+  422  doas pkg_add firefox
+  423  vi ~/.cwmrc
+  424  xinit
+  425  pkg_info -Q rust
+  426  doas pkg_add rust
+  427  rustc --version
+  428  git clone https://github.com/ffdiracex/dotfiles
+  429  cd dotfiles && ./install.sh
+  430  echo "OpenBSD - secure by default, insane by choice"</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">cal</span>
+<span style="color: #00ff88;">     March 2024
+Su Mo Tu We Th Fr Sa
+                1  2
+ 3  4  5  6  7  8  9
+10 11 12 13 14 15 16
+17 18 19 20 21 22 23
+24 25 26 27 28 29 30
+31</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">date</span>
+<span style="color: #00ff88;">Wed Mar 20 14:00:00 MDT 2024</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">uptime</span>
+<span style="color: #00ff88;"> 2:00PM  up 42 days,  6:42, 1 user, load averages: 0.07, 0.03, 0.01</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">echo $SHELL</span>
+<span style="color: #00ff88;">/bin/ksh</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">echo "I use OpenBSD btw (and I still have no bitches)"</span>
+<span style="color: #00ff88;">I use OpenBSD btw (and I still have no bitches)</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">exit</span>
 <span style="color: #00ff88;">logout</span>
+
+<span style="color: #ffff00;">$</span> <span style="color: #ffffff;">_</span>
   </pre>
 
-  <!-- Stats as system info -->
-  <pre style="color: #00ff88; font-family: 'Fira Code', monospace; font-size: 12px; text-align: left; background: #0a0c0f; padding: 10px; border-radius: 4px; border: 1px solid #333; width: 60%; margin: 20px auto;">
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> github-stats --display
-<span style="color: #00ff88;">─────────────────────────────────
- ⭐ Total Stars Earned: 42
- 📦 Total Commits: 2,718
- 🍴 Total Repos: 28
- 🔀 Total Forks: 13
- 👥 Followers: 69
-─────────────────────────────────</span>
+  <!-- GitHub stats as raw numbers, no graphs -->
+  <pre style="color: #00ff88; font-family: 'Fira Code', 'Courier New', monospace; font-size: 13px; text-align: left; background: #000000; padding: 15px; border: 1px solid #33ff33; width: 60%; margin: 10px auto;">
 
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> gh activity --last-30-days
-<span style="color: #00ff88;">2024-12-01  pushed to ffdiracex/dotfiles:main
-2024-12-03  opened PR #42 in ffdiracex/neovim-config
-2024-12-07  merged PR #69 in ffdiracex/arch-install
-2024-12-15  created repo ffdiracex/abyss-wm
-2024-12-24  starred 7 repos (merry christmas)
-2024-12-31  contributed to linux/linux (typo fix)</span>
+<span style="color: #ffff00;">ffdiracex@obsd:~$</span> <span style="color: #ffffff;">cat /home/ffdiracex/.github/stats</span>
+<span style="color: #00ff88;">────────────────────────────────────────────────
+GITHUB STATISTICS - Last updated: 2024-03-20
+────────────────────────────────────────────────
+Public Repos:     28
+Private Repos:    6
+Total Commits:    2,718
+Pull Requests:    143
+Issues Created:   67
+Issues Closed:    58
+Stars Received:   42
+Followers:        69
+Following:        13
+────────────────────────────────────────────────
+LANGUAGES (bytes):
+  C++:       1,234,567
+  Python:    987,654
+  Rust:      456,789
+  Shell:     123,456
+  C:          98,765
+────────────────────────────────────────────────</span>
+
+<span style="color: #ffff00;">ffdiracex@obsd:~$</span> <span style="color: #ffffff;">tail -5 /home/ffdiracex/.github/activity.log</span>
+<span style="color: #00ff88;">2024-03-19T23:42:13  commit: fix null pointer dereference in abyss-wm
+2024-03-19T23:58:47  push: origin HEAD -> main (3 commits)
+2024-03-20T01:15:22  issue: opened #42 "memory leak in event loop"
+2024-03-20T04:32:01  pr: merged #69 "add pledge() and unveil() sandboxing"
+2024-03-20T13:47:55  star: starred openbsd/src</span>
+
+<span style="color: #ffff00;">ffdiracex@obsd:~$</span> <span style="color: #ffffff;">_</span>
   </pre>
 
-  <!-- Contribution graph -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ffdiracex&bg_color=0a0c0f&color=00ff88&line=8F33DF&point=ffffff&area=true&area_color=1a0c2a&hide_border=true" width="90%"/>
+  <!-- Footer with just a blinking cursor -->
+  <pre style="color: #00ff88; font-family: 'Fira Code', 'Courier New', monospace; font-size: 13px; text-align: left; background: #000000; padding: 10px; border: none; width: 85%; margin: 20px auto;">
+<span style="color: #ffff00;">ffdiracex@obsd:~$</span> <span style="color: #ffffff;">echo 'EOF'</span>
+<span style="color: #00ff88;">EOF</span>
 
-  <!-- Footer -->
-  <pre style="color: #00ff88; font-family: 'Fira Code', monospace; font-size: 12px; text-align: left; background: #0a0c0f; padding: 10px; border-radius: 4px; border: 1px solid #333; width: 80%; margin: 20px auto;">
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> echo "Thanks for visiting"
-<span style="color: #00ff88;">Thanks for visiting</span>
-
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> uptime
-<span style="color: #00ff88;"> 18:23:14 up 2 weeks, 0 users,  load average: 0.42, 0.69, 0.13</span>
-
-<span style="color: #8F33DF;">ffdiracex@abyss:~$</span> <span style="color: #ffffff;">_</span>
+<span style="color: #ffff00;">ffdiracex@obsd:~$</span> <span style="color: #ffffff;">_</span>
   </pre>
-  
-  <p>
-    <img src="https://komarev.com/ghpvc/?username=ffdiracex&style=flat-square&color=8F33DF" />
-  </p>
 </div>
