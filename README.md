@@ -94,7 +94,6 @@ Time to die.
 
 ────────────────────────────────────────────────────────────────
 CURRENT PROJECTS:
-  > rewriting nginx in pure C (because rust is for people afraid of pointers)
   > writing my own WM in C (because i3 is too bloated, dwm is too minimalist)
   > kernel module that plays rickroll on boot (in C, obviously)
   > bitcoin miner in bash (why? because I can, but the core is in C)
