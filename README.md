@@ -3,4 +3,4 @@
 
 I am interested in linux and philosophy, I use Arch btw.
 
-![cat](cat1.jpg)
+![arch](arch.png)
