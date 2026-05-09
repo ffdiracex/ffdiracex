@@ -1,6 +1,7 @@
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![C/C++](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-I am interested in linux and philosophy, I use Arch btw.
+Hello! I am ffdiracex. Stay safe out there fellas, for real.
+I am interested in linux and coding in more low-level languages.
 
-![arch](arch.png)
+![vibe](giphy-1268149357.gif)
