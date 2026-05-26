@@ -5,4 +5,4 @@ Hello! I am ffdiracex.
 I am interested in linux and coding in more low-level languages.
 Stay safe out there fellas, for real.
 
-![vibe](giphy-1268149357.gif)
+![vibe](200w.gif)
